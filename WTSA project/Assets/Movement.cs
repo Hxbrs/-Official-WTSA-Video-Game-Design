@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
 
     void Update() 
     {
+        //yo m
         if (Input.GetKey(KeyCode.W))
         {
             transform.position += Vector3.forward * speed * Time.deltaTime;
