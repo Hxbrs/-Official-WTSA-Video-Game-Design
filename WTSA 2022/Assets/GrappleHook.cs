@@ -67,7 +67,7 @@ public class GrappleHook : MonoBehaviour {
             newPos = Vector2.Lerp(transform.position, target, t / time);
             line.SetPosition(0, transform.position);
             line.SetPosition(1, newPos);
-            yield return null;
+            yield return 0;
         }
         
         line.SetPosition(1, target);
